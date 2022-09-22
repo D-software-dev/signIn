@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-blue: rgb(20, 20, 236);
+    --brand-green: green;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: 800;
+    color: #4d4d4d;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: .5em 1.2em;
+    border-radius: .4em;
+    font-size: .85em;
+}
+
+a.link-1 {
+    color: rgb(163, 159, 159);
+}
+
+a.link-2 {
+    color: rgb(90, 88, 88);
+    font-weight: 600;
+}
+
+img {
+    width: 2.5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 1px solid rgb(240, 234, 234);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x-y-center {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    margin-inline: auto;
+    /* padding-block: 1em; */
+    /* background: grey; */
+}
+
+nav {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    width: 100%
+}
+
+
+.sign {
+    /* background: beige; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 17em;
+}
+
+.sign h3 {
+    text-align: center;
+    margin-block-end: 1em;
+    font-size: 1.65rem;
+}
+
+.sign a.sign-in {
+    background: var(--brand-blue);
+    color: rgba(255,255,255,.85);
+    margin-block-end: 2em;
+    padding-block: .65em;
+    text-align: center;
+}
+
+.sign p {
+    position: relative;
+    text-align: center;
+    margin-block-end: 1em;
+}
+
+.sign p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20%;
+    height: 1px;
+    background: rgb(211,206,206);
+}
+
+.sign p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20%;
+    height: 1px;
+    background: rgb(211, 206, 206);
+}
+
+.sign input {
+    width: 100%;
+    padding: .55em .5em;
+    border-radius: .4em;
+    border: 1px solid rgb(211, 206, 206);
+}
+
+.sign label, .sign a{
+    font-size: .75rem;
+    font-weight: 800;
+    color: rgb(88, 84, 84);
+    padding: 0;
+    margin-block-end: .3em;
+}
+
+.sign .email, .sign .password {
+    margin-block-end: 1em;
+}
+
+input[type=email]:focus-visible, input[type=password]:focus-visible {
+    border: 2px solid rgb(0, 89, 255);
+    outline: none;
+    transition: border .2s;
+}
+
+
+.sign .btn {
+    color: white;
+    background: rgb(48, 184, 48);
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 1.5em;
+    width: 100%;
+}
+
+.foot-links a {
+    color: var(--brand-blue);
+    font-weight: 800;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: #bebbbb;
+}
