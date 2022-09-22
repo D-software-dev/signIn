@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-green: rgb(112, 184, 112);
+    --white: white;
+    --dark: #000;
+    --grey-200: rgb(76,76,76);
+    -grey-500: rgb(196, 190, 190);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: green;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
