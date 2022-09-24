@@ -9,20 +9,29 @@
     <title>FarmMan / sign in</title>
 </head>
 <body>
-    <div class="two-col">
+    <div class="two-col container">
         <div class="image"></div>
         <div class="content">
-            <a href="#"><i class="fa-solid fa-tree logo"></i> <h3>FarmMan</h3></a>
-            <h1>Hello, <br> Welcome Back</h1>
+           <a href="#" class="logo-wrapper"><i class="fa-solid fa-tree logo"></i> <h4>FarmMan</h4></a>
             <div class="form-container">
-                <form action="#">
-                    <p>Login to message your account</p>
+              <h1>Hello, <br> Welcome Back</h1>
+              <form action="#" class="col-flex">
+                    <p class="small-text">Login to message your account</p>
                     <input type="email" name="User-email" id="email" placeholder="Email">
-                    <div class="userEmail">             
+                    <div class="userPassword col-flex">
+                        <input type="password" name="Password" id="password" placeholder="Password">
+                        <a href="#" class="small-text" style="text-align: right;">Forgot your password?</a>
                     </div>
-                    <input type="password" name="Password" id="password">
+                    <input type="submit" value="Login">
+                    <p class="small-text or">Or</p>
+                    <div class="flex">
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-dropbox"></i>
+                    </div>
                 </form>
             </div>
+            <p class="small-text">Don't have an account? <a href="#" class="sign">Signup</a></p>
         </div>
     </div>
 </body>
