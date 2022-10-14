@@ -225,6 +225,10 @@ section a.btns {
     gap: .5em;
 }
 
+.full-card:has(i.open) .full-card__row-two {
+    height: 0;
+}
+
 .row-one {
     display: flex;
     align-items: center;
@@ -245,7 +249,6 @@ section a.btns {
 .row-one i.open {
     transform: rotateZ(180deg);
 }
-
 
 .row-one:has(i.open) ~ .full-card__row-two {
     height: 100%;

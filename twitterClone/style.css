@@ -1,0 +1,192 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.sign-in__link {
+    color: var(--brand-clr)
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --brand-clr: hsl(204, 88%, 53%);
+}
+
+.twitter-logo-col {
+    min-height: 400px;
+    background: url("pics/tweet-logo.png");
+    width: 100%;
+    min-width: 600px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter-inner-icon {
+    font-size: 25rem;
+    color: white;
+}
+
+.twitter-icon {
+    color: var(--brand-clr);
+    font-size: 3rem;
+}
+
+.showcase-text {
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+
+.showcase-sub-text {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: bolder;
+}
+
+.sign-links {
+    width: 50%;
+    /* background: pink; */
+    display: grid;
+    gap: .5em;
+}
+
+.sign-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(235, 233, 233);
+}
+
+.sign-link--first {
+    justify-content: space-between;
+    padding: .365em;
+    cursor: pointer;
+}
+
+.sign-link--second, .sign-link--third {
+    justify-content: center;
+    padding: .55em;
+    cursor: pointer;
+}
+
+.sign-link--third {
+    border: none;
+    background: var(--brand-clr);
+    color: white;
+}
+
+.sign-link__user {
+    background: green;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255,255,255,.85);
+}
+
+.text-one {
+    font-size: .85rem;
+    font-weight: 500;
+    color: #3c4043;
+}
+
+.text-two {
+    font-size: .75rem;
+    font-weight: 600;
+    color:rgb(105, 105, 105);
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.text-btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.or::before, .or::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 45%;
+    background: #dbdbdb;
+}
+
+.or::before {
+    top: 60%;
+    left: 0;
+}
+
+.or::after {
+    top: 60%;
+    right: 0;
+}
+
+.text-one-light {
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+}
+
+.txt-btn--primary {
+    color: var(--brand-clr);
+}
+
+.brand-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: .5em;
+    width: 90%;
+}
+
+.brand-links a {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #3c4043;
+}
+
+@media (max-width: 1150px) {
+    .twitter-logo-col {
+        order: 2;
+    }
+    .order-lg-1 {
+        order: 1;
+    }
+
+    .container-80 {
+        width: 80%;
+        margin-inline: auto;
+    }
+}
