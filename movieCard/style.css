@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  overflow: hidden;
+  background: hsl(32, 68%, 93%);
+}
+
+i {
+  color: rgba(255, 255, 255, 0.75);
+  transition: opacity 0.5s;
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.card {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 285px;
+  width: min(80%, 340px);
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  border-radius: 0.75em;
+  overflow: hidden;
+  box-shadow: 5px 5px 28px 2px rgba(0, 0, 0, 0.75);
+  transition: height 0.25s;
+}
+
+.card:hover {
+  height: 480px;
+}
+
+.card:hover .picture i {
+  transition-delay: 0.325s;
+  opacity: 1;
+}
+
+.card .picture {
+  position: relative;
+  padding: 0.8em 0.85em;
+  height: 230px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1),
+      transparent,
+      transparent
+    ),
+    url("movie.jpg");
+  background-size: cover;
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+  transition: height 0.25s;
+}
+
+.card:hover .picture {
+  height: 270px;
+}
+
+.card .picture .space {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.card .content {
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2),
+    transparent,
+    transparent
+  );
+}
+
+.card .content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4em;
+  opacity: 0.9;
+}
+
+.card .content .props {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+
+.card .content .props li {
+  font-size: 0.59rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0 1.35em;
+}
+
+.card .content .props li:first-child {
+  padding-left: 0.35em;
+}
+
+.card .content .props li:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.65em;
+}
+
+.rating {
+  height: 17.5px;
+}
